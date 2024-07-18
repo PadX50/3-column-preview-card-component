@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, a {
+    font-family: 'Lexend Deca';
+    background-color: var(--very-light-gray-background-headings-buttons);
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+a {
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out; 
+}
+
+.heander {
+    padding: 20px;
+}
+
+.card {
+    padding: 30px;
+}
+
+.card img {
+    margin-bottom: 25px;
+}
+
+.card h1 {
+    margin-bottom: 20px;
+}
+
+.card p {
+    margin-bottom: 30px;
+}
+
+.Sedans {
+    background-color: var(--bright-orange);    
+    padding: 15px;
+    color: #ffff;
+}
+
+.Sedans a {
+    color: var(--bright-orange);
+}
+
+.SUVs {
+    background-color: var(--dark-cyan);
+    padding: 15px;
+    color: #ffff;
+}
+
+.SUVs a {
+    color: var(--dark-cyan);
+}
+
+.Luxury {
+    background-color: var(--very-dark-cyan);
+    padding: 15px;
+    color: #ffff;
+    border-radius: 0 10px 10px 0;
+}
+
+.Luxury a {
+    color: var(--very-dark-cyan);
+}
+
+a:hover {
+    background-color: transparent;
+    color: #ffff;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 992px) {
+    .heander {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .Sedans {
+    border-radius: 10px 0 0 10px;
+    }
+
+    .Luxury {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .card {
+        padding: 50px;
+        height: 500px;
+    }
+
+    .card p {
+        margin-bottom: 50px;
+    }
+
+}
+
